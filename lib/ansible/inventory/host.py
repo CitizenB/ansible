@@ -63,5 +63,3 @@ class Host(object):
         results['inventory_hostname_short'] = self.name.split('.')[0]
         results['group_names'] = sorted([ g.name for g in groups if g.name != 'all'])
         return results
-
-
